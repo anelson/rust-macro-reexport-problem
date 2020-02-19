@@ -1,0 +1,14 @@
+[package]
+name = "my-binary-crate"
+version = "0.1.0"
+authors = ["Adam Nelson <anelson@users.noreply.github.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+my-logger-crate = { path = "../my-logger-crate" }
+
+# If the following line is uncommented, then the call to `print_trace!` in `main()` fails to compile.
+tower = "0.3"
+
